@@ -1,3 +1,7 @@
 <div id='container'>
   <!-- Your html here -->
+  <li class="link" ng-repeat="link in data.links">
+    {{link.title}} - {{link.visits}}
+    <a href="{{link.url}}">localhost:8000/api/links/{{link.code}}<a/>
+  </li>
 </div>

@@ -1,6 +1,10 @@
 <div id='container'>
 <!-- Your code here -->
-
+  <form ng-submit='addLink(link)'>
+    <input type='text' placeholder='url shortener' ng-model='link.url'/>
+    <button class='btn btn-primary'>shorten</button>
+    {{ link }}
+  </form>
 </div>
 
 
