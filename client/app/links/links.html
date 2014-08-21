@@ -1,7 +1,9 @@
 <div id='container'>
   <!-- Your html here -->
-  <li class="link" ng-repeat="link in data.links">
-    {{link.title}} - {{link.visits}}
-    <a href="{{link.url}}">localhost:8000/api/links/{{link.code}}<a/>
+  <input name='search' class='search' ng-model='t' />
+  <li class="link" ng-repeat="link in data.links | filter:t | orderBy:'-visits'">
+
+    {{link.title}} &nbsp-&nbsp {{link.visits}}
+    <a href="http://localhost:8000/api/links/{{link.code}}"><img src="../../assets/redirect_icon.png" ><br>localhost:8000/api/links/{{link.code}}<a/>
   </li>
 </div>

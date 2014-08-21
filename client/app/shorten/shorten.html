@@ -1,10 +1,11 @@
-<div id='container'>
+<div id='container' novalidate>
 <!-- Your code here -->
-  <form ng-submit='addLink(link)'>
-    <input type='text' placeholder='url shortener' ng-model='link.url'/>
+  <form name='formShorten' ng-submit='addLink()'>
+    <input name='url' type='url' placeholder='url shortener' ng-model='link.url' />
+    <!-- <div ng-class='{error: formShorten.url.$invalid}'> not a valid url</div> -->
     <button class='btn btn-primary'>shorten</button>
-    {{ link }}
   </form>
+  <img src="../../assets/spiffygif_46x46.gif" ng-if="loading">
 </div>
 
 

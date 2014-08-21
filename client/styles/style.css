@@ -13,6 +13,7 @@ a {
 h1 {
   font-style: italic;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .navigation {
@@ -141,3 +142,14 @@ input[type=url] {
 .creator .message {
   clear: both;
 }
+
+.search {
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
